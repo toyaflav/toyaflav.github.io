@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Toya — Ana Pérez</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="index">
+
+<main>
+
+  <!-- 1. PRESENTACIÓN: vídeo + nombre que se mueve + Toya + resumen -->
+  <section class="hero" id="hero" data-tone="dark">
+    <div class="stick">
+      <div class="frame">
+        <video id="heroVideo" src="assets/video/sobre.mp4" muted loop playsinline autoplay preload="auto"></video>
+      </div>
+
+      <div class="hero-txt wrap">
+        <div class="inner">
+          <p class="eyebrow">Portugal &amp; Venezuela · 2026</p>
+          <h1 class="name" id="name" aria-label="Ana Pérez"><span class="w">Ana</span><span class="w">Pérez</span></h1>
+          <div class="alias"><img src="assets/logo.png" alt="Toya"><span class="rule"></span></div>
+          <p class="role" data-i18n="hero.role">Vídeo · Fotografia · 3D · Design</p>
+          <p class="lead" data-i18n="hero.lead">Quatro coisas essenciais com que mostro a minha vida, o meu estilo e os meus pensamentos.</p>
+        </div>
+      </div>
+
+      <div class="enter"><span class="jp">入口</span><div class="title" data-i18n="hero.enter">Entra no portfólio</div></div>
+      <div class="scrollcue"><span></span><em style="font-style:normal" data-i18n="hero.scroll">Desliza</em></div>
+      <button type="button" class="snd snd-toggle glass" aria-pressed="false">Som: não</button>
+    </div>
+  </section>
+
+  <!-- 2. LAS 4 PÁGINAS -->
+  <!-- SOBRE MIM -->
+  <section class="about wrap" id="sobre" data-tone="light">
+    <div class="inner about-grid">
+      <figure class="about-img rv"><div class="media" data-zoom data-title="Toya"><img src="img/yo/eu.jpg" alt="Ana Pérez (Toya)"></div>
+        <figcaption>Ana Pérez · Toya</figcaption></figure>
+      <div class="about-txt rv">
+        <span class="eyebrow" data-i18n="ab.eye">Sobre mim</span>
+        <h2 class="about-h" data-i18n="ab.t">Olá, sou a Toya</h2>
+        <p data-i18n="ab.p1"></p>
+        <p data-i18n="ab.p2"></p>
+        <p data-i18n="ab.p3"></p>
+        <ul class="about-tags" aria-label="Áreas">
+          <li data-i18n="nav.video">Vídeo</li><li data-i18n="nav.fotos">Fotos</li><li>3D</li><li>Design</li><li data-i18n="ab.dance">Dança</li>
+        </ul>
+        <dl class="about-facts">
+          <div><dt data-i18n="ab.edu">Educação</dt><dd data-i18n="ab.edu.v">Curso Profissional de Multimédia (12.º ano)</dd></div>
+          <div><dt data-i18n="ft.from">De</dt><dd>Portugal &amp; Venezuela</dd></div>
+          <div class="wide"><dt data-i18n="ab.skills">Skills</dt><dd data-i18n="ab.skills.v">Criativa · Pensamento crítico · Fotografia · Sociável · Edição</dd></div>
+          <div class="wide"><dt data-i18n="ab.tools">Ferramentas</dt><dd class="tools"><span>Lightroom</span><span>Photoshop</span><span>Illustrator</span><span>Premiere Pro</span><span>After Effects</span><span>Blender</span><span>3ds Max</span></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. LAS 4 PÁGINAS, como una playlist -->
+  <section class="playlist wrap" data-tone="dark">
+    <div class="inner">
+      <div class="pl-head rv">
+        <div class="pl-cover" aria-hidden="true">
+          <img src="assets/logo.png" alt="">
+          <span class="jp">映 写 他</span>
+          <span class="pl-sticker">Mixtape</span>
+        </div>
+        <div class="pl-info">
+          <span class="eyebrow" data-i18n="pl.label">Playlist</span>
+          <h2 class="pl-title" data-i18n="idx.title">Explora o meu trabalho</h2>
+          <p class="pl-desc" data-i18n="idx.text"></p>
+          <p class="pl-meta"><img src="assets/logo.png" alt=""><b>Toya</b><span>· 2026 · 3 <span data-i18n="pl.tracks">faixas</span> · 91 <span data-i18n="u.pcs">peças</span></span></p>
+        </div>
+      </div>
+
+      <div class="pl-actions">
+        <a class="pl-play" href="video.html" data-i18n-aria="pl.play" aria-label="Reproduzir"><svg width="22" height="22" viewBox="0 0 20 20" fill="currentColor"><path d="M6 3.5v13l11-6.5z"/></svg></a>
+        <button type="button" class="pl-icon" id="plShuffle" data-i18n-aria="pl.shuffle" aria-label="Aleatório"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h3.5c2 0 3.3 1 4.3 2.6l2.4 4.8c1 1.6 2.3 2.6 4.3 2.6H21M3 18h3.5c1.5 0 2.6-.6 3.5-1.6M14 7.6c.9-1 2-1.6 3.5-1.6H21M18 3l3 3-3 3M18 15l3 3-3 3"/></svg></button>
+        <button type="button" class="pl-icon" id="plLike" aria-pressed="false" data-i18n-aria="pl.like" aria-label="Gosto"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.4-9.2-8.6C1.3 8.3 3.2 4.8 6.6 4.8c2 0 3.3 1.1 4.4 2.6 1.1-1.5 2.4-2.6 4.4-2.6 3.4 0 5.3 3.5 3.8 6.6C19 15.6 12 20 12 20z"/></svg></button>
+        <span class="pl-bpm" aria-hidden="true"><i class="eq" aria-hidden="true"><b></b><b></b><b></b><b></b></i> 92 BPM</span>
+      </div>
+
+      <div class="pl-table">
+        <div class="pl-row pl-th" aria-hidden="true">
+          <span class="pl-n">#</span><span data-i18n="th.title">Título</span><span class="pl-alb" data-i18n="th.alb">Álbum</span><span class="pl-dur"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="6.5"/><path d="M8 4v4l2.5 1.5"/></svg></span>
+        </div>
+        <a class="pl-row" href="video.html">
+          <span class="pl-n"><i class="n">1</i><i class="eq" aria-hidden="true"><b></b><b></b><b></b><b></b></i></span>
+          <span class="pl-t"><span class="pl-thumb"><video src="assets/video/lm/lm2.mp4" muted loop playsinline preload="metadata" data-hoverplay></video></span><span class="pl-tt"><strong data-i18n="nav.video">Vídeo</strong><small data-i18n="idx.video"></small></span></span>
+          <span class="pl-alb"><span class="jp">映像</span> Motion</span>
+          <span class="pl-dur">13 <span data-i18n="u.vid"></span></span>
+        </a>
+        <a class="pl-row" href="fotos.html">
+          <span class="pl-n"><i class="n">2</i><i class="eq" aria-hidden="true"><b></b><b></b><b></b><b></b></i></span>
+          <span class="pl-t"><span class="pl-thumb"><img src="assets/images/yo/IMG_5077.jpg" alt="" loading="lazy"></span><span class="pl-tt"><strong data-i18n="nav.fotos">Fotos</strong><small data-i18n="idx.fotos"></small></span></span>
+          <span class="pl-alb"><span class="jp">写真</span> Photography</span>
+          <span class="pl-dur">45 <span data-i18n="u.fot"></span></span>
+        </a>
+        <a class="pl-row" href="otros.html">
+          <span class="pl-n"><i class="n">3</i><i class="eq" aria-hidden="true"><b></b><b></b><b></b><b></b></i></span>
+          <span class="pl-t"><span class="pl-thumb"><img src="img/3d/3d6.jpg" alt="" loading="lazy"></span><span class="pl-tt"><strong data-i18n="nav.otros">Outros</strong><small data-i18n="idx.otros"></small></span></span>
+          <span class="pl-alb"><span class="jp">他</span> 3D · IAM · LMK</span>
+          <span class="pl-dur">33 <span data-i18n="u.pcs"></span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. MURAL DE NOVEDADES — collage de pegatinas -->
+  <section class="collage wrap" data-tone="dark" aria-labelledby="collT">
+    <div class="collage-stage">
+      <div class="collage-title">
+        <span class="eyebrow" data-i18n="coll.eye">Mural</span>
+        <h2 id="collT"><span data-i18n="coll.a">Novidades</span><em data-i18n="coll.b">do dia a dia</em></h2>
+        <p data-i18n="coll.p"></p>
+      </div>
+        <figure class="chip" data-speed=".12" style="--x:2%;--y:3%;--w:24%;--r:-6deg;--ar:4/5">
+          <span class="stk" data-i18n="st.new">Novo</span><div class="media" data-zoom data-title="Reel"><video data-auto src="assets/video/v2.mp4" preload="metadata"></video></div>
+          <figcaption><b data-i18n="k.video"></b>Reel</figcaption>
+        </figure>
+        <figure class="chip" data-speed=".22" style="--x:38%;--y:1%;--w:17%;--r:3deg;--ar:4/5">
+          <div class="media" data-zoom data-title="Toya"><img src="assets/images/yo/IMG_5077.jpg" alt="Toya" loading="lazy"></div>
+          <figcaption><b data-i18n="k.photo"></b>Toya</figcaption>
+        </figure>
+        <figure class="chip" data-speed="-.1" style="--x:71%;--y:2%;--w:22%;--r:5deg;--ar:2480/3508">
+          <span class="stk sky" data-i18n="k.poster">Póster</span><div class="media" data-zoom data-title="Butterfly Effect"><img src="assets/design/cartaz/Butterfly effect porter.jpg" alt="Butterfly Effect" loading="lazy"></div>
+          <figcaption><b data-i18n="k.poster"></b>Butterfly Effect</figcaption>
+        </figure>
+        <figure class="chip" data-speed="-.16" style="--x:3%;--y:40%;--w:19%;--r:4deg;--ar:9/16">
+          <div class="media" data-zoom data-title="LM"><video data-auto src="assets/video/lm/lm3.mp4" preload="metadata"></video></div>
+          <figcaption><b data-i18n="k.reel"></b>LMK</figcaption>
+        </figure>
+        <figure class="chip" data-speed=".1" style="--x:73%;--y:39%;--w:25%;--r:-4deg;--ar:3/2">
+          <span class="stk" data-i18n="st.hot">Acabado de sair</span><div class="media" data-zoom data-title="Mockup"><img src="assets/design/cartaz/anamockuocidade2.jpg" alt="Mockup" loading="lazy"></div>
+          <figcaption><b data-i18n="k.poster"></b>Mockup</figcaption>
+        </figure>
+        <figure class="chip" data-speed=".18" style="--x:27%;--y:64%;--w:13%;--r:-8deg;--ar:1/1">
+          <span class="stk round sky">Toya<br>2026</span><div class="media" style="background:#FFFEF0"><img src="assets/design/cartaz/logoloader.gif" alt="Logo loader" loading="lazy"></div>
+          <figcaption><b data-i18n="k.gif"></b>Logo loader</figcaption>
+        </figure>
+        <figure class="chip" data-speed=".08" style="--x:6%;--y:76%;--w:18%;--r:-3deg;--ar:4/5">
+          <div class="media" data-zoom data-title="Rave"><img src="img/rave/rave1.jpg" alt="Rave" loading="lazy"></div>
+          <figcaption><b data-i18n="k.photo"></b>Rave</figcaption>
+        </figure>
+        <figure class="chip" data-speed="-.08" style="--x:44%;--y:78%;--w:16%;--r:2deg;--ar:4/5">
+          <div class="media" data-zoom data-title="Latte x Sanjo"><img src="img/latte/latte1.jpg" alt="Latte x Sanjo" loading="lazy"></div>
+          <figcaption><b data-i18n="k.photo"></b>Latte x Sanjo</figcaption>
+        </figure>
+        <figure class="chip" data-speed=".14" style="--x:66%;--y:68%;--w:17%;--r:6deg;--ar:9/16">
+          <span class="stk" data-i18n="st.new">Novo</span><div class="media" data-zoom data-title="LM"><video data-auto src="assets/video/lm/lm2.mp4" preload="metadata"></video></div>
+          <figcaption><b data-i18n="k.reel"></b>LMK</figcaption>
+        </figure>
+    </div>
+  </section>
+  <div class="band" aria-hidden="true"><div class="marquee"><span>Novidades · 新着 · Novedades · 新着 · What's new · 新着 · Novidades · 新着 ·&nbsp;</span><span>Novidades · 新着 · Novedades · 新着 · What's new · 新着 · Novidades · 新着 ·&nbsp;</span></div></div>
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
